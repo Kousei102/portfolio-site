@@ -37,9 +37,9 @@ export const skillCategories: SkillCategory[] = [
   {
     category: "ツール・環境",
     skills: [
-      { name: "Claude Code", level: "得意" },
-      { name: "Git / GitHub", level: "得意" },
-      { name: "VS Code", level: "得意" },
+      { name: "Claude Code", level: "基礎" },
+      { name: "VS Code", level: "基礎" },
+      { name: "Git / GitHub", level: "基礎" },
       { name: "Vercel", level: "基礎" },
       { name: "Docker", level: "学習中" },
     ],

@@ -4,6 +4,9 @@ const levelStyles: Record<string, string> = {
   得意: "bg-accent/10 text-accent",
   基礎: "bg-foreground/5 text-foreground/70",
   学習中: "bg-foreground/5 text-foreground/50",
+  取得済み: "bg-accent/10 text-accent",
+  合格見込み: "bg-foreground/5 text-foreground/70",
+  取得予定: "bg-foreground/5 text-foreground/50",
 };
 
 export function Skills() {

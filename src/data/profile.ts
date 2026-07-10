@@ -31,7 +31,7 @@ export const profile: Profile = {
   headline: "はじめまして、新米エンジニアです",
   about:
     "Claude Codeを用いた開発を学んでいます。",
-  email: "your-email@example.com",
+  email: "syamisense@outlook.jp",
   socials: [
     { label: "GitHub", href: "https://github.com/Kousei102" },
     /** { label: "X (Twitter)", href: "https://x.com/your-account" }, */

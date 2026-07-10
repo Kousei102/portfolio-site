@@ -6,7 +6,7 @@ export function Contact() {
       <div className="mx-auto max-w-5xl px-6 py-20">
         <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Contact</h2>
         <p className="mt-2 text-foreground/60">
-          お気軽にご連絡ください。
+          ご連絡はこちら。
         </p>
 
         <div className="mt-8">
