@@ -25,17 +25,17 @@ export const projects: Project[] = [
       "自己紹介・スキル・作品をまとめた個人サイト。Next.js（App Router）と TypeScript で構築し、" +
       "型付きのデータファイルで内容を管理してメンテナンスしやすくしています。レスポンシブ対応。",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    repoUrl: "https://github.com/your-account/portfolio-site",
+    repoUrl: "https://github.com/Kousei102/portfolio-site",
     demoUrl: "",
     role: "個人開発",
   },
   {
-    title: "作品タイトル その2",
+    title: "レシート家計簿AI",
     description:
-      "どんな課題を解決するために、何を作ったのかを書きます。工夫した点や学びを一言添えると伝わりやすくなります。",
-    tech: ["React", "TypeScript"],
-    repoUrl: "https://github.com/your-account/example-2",
-    demoUrl: "",
+      "レシートの写真をアップロードすると、AIが自動で家計簿を作成してくれるアプリ。Claude APIとNext.jsを使用し、ユーザーが簡単に家計管理できるように設計されています。",
+    tech: ["Next.js", "TypeScript"],
+    repoUrl: "https://github.com/Kousei102/receipt-budget-ai",
+    demoUrl: "https://receipt-budget-ai.vercel.app/",
     role: "個人開発",
   },
 ];
