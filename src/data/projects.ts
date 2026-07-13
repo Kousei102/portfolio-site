@@ -24,7 +24,7 @@ export const projects: Project[] = [
     description:
       "自己紹介・スキル・作品をまとめた個人サイト。Next.js（App Router）と TypeScript で構築し、" +
       "型付きのデータファイルで内容を管理してメンテナンスしやすくしています。レスポンシブ対応。",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel", "Claude Code"],
     repoUrl: "https://github.com/Kousei102/portfolio-site",
     demoUrl: "",
     role: "個人開発",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     title: "レシート家計簿AI",
     description:
       "レシートの写真をアップロードすると、AIが自動で家計簿を作成してくれるアプリ。Claude APIとNext.jsを使用し、ユーザーが簡単に家計管理できるように設計されています。",
-    tech: ["Next.js", "TypeScript"],
+    tech: ["Next.js", "TypeScript", "Claude Code"],
     repoUrl: "https://github.com/Kousei102/receipt-budget-ai",
     demoUrl: "https://receipt-budget-ai.vercel.app/",
     role: "個人開発",
