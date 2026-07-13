@@ -30,8 +30,8 @@ export const profile: Profile = {
   nameEn: "Kousei Kiguchi",
   headline: "はじめまして、新米エンジニアです",
   about:
-    "Claude Codeを用いた開発を学んでいます。",
-  email: "syamisense@outlook.jp",
+    "Claude Codeを用いた開発を学んでいます。\n\n※ 現在、このポートフォリオは制作中です。内容が不十分な箇所があります。ご了承ください。",
+  email: "mailaddress@example.com",
   socials: [
     { label: "GitHub", href: "https://github.com/Kousei102" },
     /** { label: "X (Twitter)", href: "https://x.com/your-account" }, */
