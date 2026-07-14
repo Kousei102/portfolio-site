@@ -38,4 +38,14 @@ export const projects: Project[] = [
     demoUrl: "https://receipt-budget-ai.vercel.app/",
     role: "個人開発",
   },
+  {
+    title: "ミニゲーム集",
+    description:
+      "ブラウザで遊べる5種類のミニゲーム（ブロック崩し・Climb or Burn・弾幕シューティング・剣戟バトル・スターよけ）を集めたゲームポータル。" +
+      "難易度設定やアイテム、2人対戦などゲームごとに異なる遊び方を実装しています。",
+    tech: ["HTML", "CSS", "JavaScript", "Claude Code"],
+    repoUrl: "https://github.com/Kousei102/claude-code-book-template",
+    demoUrl: "https://minigames-k.onrender.com/",
+    role: "個人開発",
+  },
 ];
