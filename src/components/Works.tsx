@@ -1,5 +1,5 @@
 import { projects } from "@/data/projects";
-import { ProjectCard } from "@/components/ProjectCard";
+import { WorksGrid } from "@/components/WorksGrid";
 
 export function Works() {
   return (
@@ -11,11 +11,7 @@ export function Works() {
         <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Works</h2>
         <p className="mt-2 text-foreground/60">これまでに作ったもの</p>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          {projects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
-          ))}
-        </div>
+        <WorksGrid projects={projects} />
       </div>
     </section>
   );

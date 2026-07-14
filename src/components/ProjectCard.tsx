@@ -1,3 +1,4 @@
+import type { KeyboardEvent } from "react";
 import type { Project } from "@/data/projects";
 
 /** 外部リンクアイコン（SVG インライン） */
@@ -19,9 +20,37 @@ function LinkIcon() {
   );
 }
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({
+  project,
+  onOpen,
+}: {
+  project: Project;
+  /** 指定するとカードがクリック可能になり、クリックで詳細モーダルを開く */
+  onOpen?: () => void;
+}) {
+  const clickable = Boolean(onOpen);
+
   return (
-    <article className="flex flex-col rounded-xl border border-black/5 bg-foreground/[0.02] p-6 transition-colors hover:border-accent/40 dark:border-white/10">
+    <article
+      className={`flex flex-col rounded-xl border border-black/5 bg-foreground/[0.02] p-6 transition-colors hover:border-accent/40 dark:border-white/10${
+        clickable
+          ? " cursor-pointer hover:bg-foreground/[0.04] focus-visible:border-accent/40 focus-visible:outline-none"
+          : ""
+      }`}
+      {...(clickable
+        ? {
+            role: "button",
+            tabIndex: 0,
+            onClick: onOpen,
+            onKeyDown: (e: KeyboardEvent) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                onOpen?.();
+              }
+            },
+          }
+        : {})}
+    >
       <div className="flex items-start justify-between gap-3">
         <h3 className="text-lg font-semibold">{project.title}</h3>
         {project.role && (
@@ -46,6 +75,10 @@ export function ProjectCard({ project }: { project: Project }) {
         ))}
       </ul>
 
+      {clickable && (
+        <p className="mt-4 text-sm font-medium text-accent">詳細を見る →</p>
+      )}
+
       {(project.repoUrl || project.demoUrl) && (
         <div className="mt-5 flex flex-wrap gap-4 text-sm font-medium">
           {project.demoUrl && (
@@ -53,6 +86,7 @@ export function ProjectCard({ project }: { project: Project }) {
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               className="inline-flex items-center gap-1.5 text-accent hover:underline"
             >
               <LinkIcon /> デモを見る
@@ -63,6 +97,7 @@ export function ProjectCard({ project }: { project: Project }) {
               href={project.repoUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               className="inline-flex items-center gap-1.5 text-foreground/70 hover:text-accent"
             >
               <LinkIcon /> コード
