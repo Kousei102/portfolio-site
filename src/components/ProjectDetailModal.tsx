@@ -116,6 +116,23 @@ export function ProjectDetailModal({
           </ul>
         </div>
 
+        {/* 動作中の動画（音なしで自動再生・ループ） */}
+        {details.video && (
+          <div className="mt-6 overflow-hidden rounded-lg border border-black/5 dark:border-white/10">
+            <video
+              src={details.video.src}
+              poster={details.video.poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              preload="metadata"
+              className="h-auto w-full bg-black"
+            />
+          </div>
+        )}
+
         {/* スクリーンショット */}
         {details.screenshots && details.screenshots.length > 0 && (
           <div className="mt-6 flex flex-col gap-4">

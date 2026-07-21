@@ -6,18 +6,8 @@ export function Contact() {
       <div className="mx-auto max-w-5xl px-6 py-20">
         <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Contact</h2>
         <p className="mt-2 text-foreground/60">
-          ご連絡はこちら。※ 現在、表示されているのは仮のメールアドレスとなっており、ご連絡いただくことはできません。ご了承ください。
+          下記のリンクからご覧いただけます。
         </p>
-
-        <div className="mt-8">
-          <a
-            href={`mailto:${profile.email}`}
-            className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
-          >
-            メールを送る
-          </a>
-          <p className="mt-3 text-sm text-foreground/60">{profile.email}</p>
-        </div>
 
         {profile.socials.length > 0 && (
           <ul className="mt-8 flex flex-wrap gap-4">

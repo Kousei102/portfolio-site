@@ -19,8 +19,6 @@ export type Profile = {
   headline: string;
   /** 自己紹介文（数行程度） */
   about: string;
-  /** 連絡用メールアドレス */
-  email: string;
   /** SNS・外部リンク */
   socials: SocialLink[];
 };
@@ -31,7 +29,6 @@ export const profile: Profile = {
   headline: "はじめまして、新米エンジニアです",
   about:
     "Claude Codeを用いた開発を学んでいます。\n\n※ 現在、このポートフォリオは制作中です。内容が不十分な箇所があります。ご了承ください。",
-  email: "example@example.com",
   socials: [
     { label: "GitHub", href: "https://github.com/Kousei102" },
     /** { label: "X (Twitter)", href: "https://x.com/your-account" }, */
