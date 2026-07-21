@@ -87,6 +87,9 @@ export const projects: Project[] = [
     demoUrl: "https://minigames-k.onrender.com/",
     role: "個人開発",
     details: {
+      video: {
+        src: "/works/PF用動画_ミニゲーム集.mp4",
+      },
       overview:
         "ブラウザだけで遊べる 5 種類のミニゲームを 1 つのポータルにまとめた作品です。" +
         "「小さくても遊びとして完成しているものを数多く作る」ことをテーマに、ジャンルの異なるゲームをそれぞれ実装しました。\n\n" +
