@@ -49,8 +49,8 @@ export const projects: Project[] = [
   {
     title: "このポートフォリオサイト",
     description:
-      "自己紹介・スキル・作品をまとめた個人サイト。Next.js（App Router）と TypeScript で構築し、" +
-      "型付きのデータファイルで内容を管理してメンテナンスしやすくしています。レスポンシブ対応。",
+      "自己紹介・スキル・作品を 1 ページにまとめた個人サイト。作品カードをクリックすると、" +
+      "動作デモ動画やスクリーンショット付きの詳細を表示できます。ダークモード・スマートフォン表示にも対応。",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel", "Claude Code"],
     repoUrl: "https://github.com/Kousei102/portfolio-site",
     demoUrl: "",
