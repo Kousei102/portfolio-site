@@ -60,4 +60,3 @@ npm run lint    # ESLint
 
 - **メールアドレスは廃止済み**: `profile` に `email` フィールドは無く、旧 Contact セクションは実態（socials リンクのみ、現状 GitHub だけ）に合わせて **Links** に改称済み。問い合わせフォームは未実装（`Links.tsx` に将来対応の TODO あり。フォーム追加時は Contact への改称を検討）。
 - 作品モーダルで使う画像・動画は `public/works/` 配下に置き、`projects.ts` の `details.screenshots` / `details.video` に絶対パス（例: `/works/xxx.png`）で指定する。
-- サイト自体が「制作中」の位置づけ（`profile.about` に明記）。
