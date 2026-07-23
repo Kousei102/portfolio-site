@@ -33,10 +33,10 @@ export function Hero() {
             作品を見る
           </a>
           <a
-            href="#contact"
+            href="#links"
             className="rounded-full border border-foreground/20 px-6 py-3 text-sm font-semibold transition-colors hover:border-accent hover:text-accent"
           >
-            連絡する
+            リンクを見る
           </a>
         </div>
       </div>

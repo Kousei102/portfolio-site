@@ -32,7 +32,7 @@ src/
 │   ├── WorksGrid.tsx        # "use client"。選択中の作品を state で保持し、モーダルを制御
 │   ├── ProjectCard.tsx      # 1 作品分のカード。details があれば onOpen でクリック可能に
 │   ├── ProjectDetailModal.tsx # "use client"。details の内容（説明・画像・動画）を大きく表示
-│   ├── Contact.tsx          # #contact セクション。socials リンクのみ表示
+│   ├── Links.tsx            # #links セクション。socials リンクのみ表示
 │   └── Footer.tsx
 └── data/               # サイトの内容を型付きで管理するデータファイル
     ├── profile.ts      # 氏名・肩書き・自己紹介・SNSリンク（socials）
@@ -46,7 +46,7 @@ src/
 - **コンポーネントはプレゼンテーション専用**: `src/components/` はデータを受け取って表示するだけ。`"use client"` は `Header`（モバイルメニュー開閉）、`WorksGrid`（選択中の作品を `useState` で保持）、`ProjectDetailModal`（`useEffect` でキー操作・スクロール制御）の 3 つのみ。
 - **作品モーダル**: `Works` → `WorksGrid`（client）→ `ProjectCard` + `ProjectDetailModal` の構成。`projects.ts` で作品に `details`（overview / highlights / challenges / screenshots / video）を書くとカードがクリック可能になり、詳細モーダルが開く。`details` が無い作品はクリック不可のまま。
 - **テーマ**: 色は `globals.css` の CSS 変数（`--background` / `--foreground` / `--accent`）で管理。`prefers-color-scheme: dark` でダークモードに自動対応。差し色を変えたい場合は `--accent` を編集。
-- **ページ構造**: `page.tsx` が `Header → Hero(#about) → Skills(#skills) → Works(#works) → Contact(#contact) → Footer` を並べる。ナビはページ内アンカーリンク。
+- **ページ構造**: `page.tsx` が `Header → Hero(#about) → Skills(#skills) → Works(#works) → Links(#links) → Footer` を並べる。ナビはページ内アンカーリンク。
 
 ## よく使うコマンド
 
@@ -58,6 +58,6 @@ npm run lint    # ESLint
 
 ## 注意
 
-- **メールアドレスは廃止済み**: `profile` に `email` フィールドは無く、Contact セクションは `profile.socials` のリンク（現状 GitHub のみ）だけを表示する。問い合わせフォームは未実装（`Contact.tsx` に将来対応の TODO あり）。
+- **メールアドレスは廃止済み**: `profile` に `email` フィールドは無く、旧 Contact セクションは実態（socials リンクのみ、現状 GitHub だけ）に合わせて **Links** に改称済み。問い合わせフォームは未実装（`Links.tsx` に将来対応の TODO あり。フォーム追加時は Contact への改称を検討）。
 - 作品モーダルで使う画像・動画は `public/works/` 配下に置き、`projects.ts` の `details.screenshots` / `details.video` に絶対パス（例: `/works/xxx.png`）で指定する。
 - サイト自体が「制作中」の位置づけ（`profile.about` に明記）。

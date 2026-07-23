@@ -55,7 +55,7 @@ src/
 │   ├── Skills.tsx
 │   ├── Works.tsx
 │   ├── ProjectCard.tsx
-│   ├── Contact.tsx
+│   ├── Links.tsx
 │   └── Footer.tsx
 └── data/              # サイトのコンテンツ（ここを編集）
     ├── profile.ts

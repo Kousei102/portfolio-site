@@ -1,12 +1,12 @@
 import { profile } from "@/data/profile";
 
-export function Contact() {
+export function Links() {
   return (
-    <section id="contact" className="scroll-mt-16">
+    <section id="links" className="scroll-mt-16">
       <div className="mx-auto max-w-5xl px-6 py-20">
-        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Contact</h2>
+        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Links</h2>
         <p className="mt-2 text-foreground/60">
-          下記のリンクからご覧いただけます。
+          制作物やアカウントは下記のリンクからご覧いただけます。
         </p>
 
         {profile.socials.length > 0 && (
@@ -26,7 +26,8 @@ export function Contact() {
           </ul>
         )}
 
-        {/* TODO: 将来的にお問い合わせフォームを追加する場合はここに。
+        {/* TODO: 将来的にお問い合わせフォームを追加する場合はここに
+            （その際はセクション名を Contact に戻すことを検討）。
             静的サイトのままなら Formspree などのフォームバックエンド、
             動的にするなら Route Handler + メール送信サービスを利用します。 */}
       </div>
