@@ -40,7 +40,6 @@ export const skillCategories: SkillCategory[] = [
       { name: "Claude Code", level: "基礎" },
       { name: "VS Code", level: "基礎" },
       { name: "Git / GitHub", level: "基礎" },
-      { name: "Vercel", level: "基礎" },
       { name: "Docker", level: "学習中" },
     ],
   },
@@ -48,7 +47,7 @@ export const skillCategories: SkillCategory[] = [
     category: "資格",
     skills: [
       { name: "ITパスポート", level: "取得済み" },
-      { name: "基本情報技術者試験", level: "合格見込み" },
+      { name: "基本情報技術者試験", level: "取得済み" },
     ],
   }
 ];
