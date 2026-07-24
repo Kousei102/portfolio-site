@@ -61,7 +61,7 @@ export const projects: Project[] = [
     description:
       "レシートや決済アプリ・カード明細の画像をアップロードすると、AI が品目・金額・日付を自動で読み取って家計簿にするアプリ。" +
       "収入・貯蓄目標・定期収支まで管理し、「あと使える額」がひと目でわかるよう設計しています。",
-    tech: ["Next.js", "TypeScript", "Claude API", "Claude Code"],
+    tech: ["Next.js", "TypeScript", "Claude API", "Vercel", "Claude Code"],
     repoUrl: "https://github.com/Kousei102/receipt-budget-ai",
     demoUrl: "https://receipt-budget-ai.vercel.app/",
     role: "個人開発",
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     description:
       "ブラウザで遊べる5種類のミニゲームを集めたゲームポータル。" +
       "難易度設定やアイテム、2人対戦などゲームごとに異なる遊び方を実装しています。",
-    tech: ["HTML", "CSS", "JavaScript", "Claude Code"],
+    tech: ["HTML", "CSS", "JavaScript", "Render", "Claude Code"],
     repoUrl: "https://github.com/Kousei102/claude-code-book-template",
     demoUrl: "https://minigames-k.onrender.com/",
     role: "個人開発",
